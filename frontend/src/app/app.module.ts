@@ -7,13 +7,15 @@ import {HomePageComponent} from "./pages/home/home-page.component";
 import {NavComponent} from "./components/nav/nav.component";
 import {NgOptimizedImage} from "@angular/common";
 import {Footer} from "./components/footer/footer";
+import {BlogCardComponent} from "./components/blog-card/blog-card.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     NavComponent,
-    Footer
+    Footer,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,
