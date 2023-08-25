@@ -1,3 +1,13 @@
 <div class="container">
-  <h3 class="fs-2 text-white text-sm-center pt-3">MY BLOG</h3>
+  <h3 class="fs-1 fw-bold color-green-dark text-sm-center pt-3"><span class="color-green">MY</span> BLOG</h3>
+  <div class="skills-cards">
+    <app-blog-card *ngFor="let shortBlog of shortBlogs"
+                   [routerLink]="['/article', shortBlog.commonId]"
+                   [title]="shortBlog.title"
+                   [description]="shortBlog.description"
+                   [type]="shortBlog.type"
+  ></app-blog-card>
+  </div>
+
+
 </div>

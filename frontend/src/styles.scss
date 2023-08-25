@@ -4,7 +4,7 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0f1418 !important;
+  background: #f7f0f0 !important;
 }
 
 /* Указываем box sizing */
@@ -86,3 +86,31 @@ select {
   }
 }
 
+
+//bg
+.bg-green-lite{
+  background-color: #18f2b2;
+}
+.bg-white{
+  background-color: #f7f0f0;
+}
+.bg-green-dark{
+  background-color: #00120B;
+}
+.bg-green{
+  background-color: #35605A;
+}
+
+//colors for text
+.color-green-lite{
+  color: #18f2b2;
+}
+.color-white{
+  color: #f7f0f0;
+}
+.color-green-dark{
+  color: #00120B;
+}
+.color-green{
+  color: #35605A;
+}

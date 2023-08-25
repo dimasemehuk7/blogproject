@@ -8,6 +8,8 @@ import {NavComponent} from "./components/nav/nav.component";
 import {NgOptimizedImage} from "@angular/common";
 import {Footer} from "./components/footer/footer";
 import {BlogCardComponent} from "./components/blog-card/blog-card.component";
+import {HttpClientModule} from "@angular/common/http";
+import {ArticlePageComponent} from "./pages/article/article-page.component";
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import {BlogCardComponent} from "./components/blog-card/blog-card.component";
     HomePageComponent,
     NavComponent,
     Footer,
-    BlogCardComponent
+    BlogCardComponent,
+    ArticlePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
