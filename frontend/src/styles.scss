@@ -4,7 +4,7 @@ body {
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f7f0f0 !important;
+  //background: #f7f0f0 !important;
 }
 
 /* Указываем box sizing */
@@ -86,6 +86,15 @@ select {
   }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  height: 100%;
+}
 
 //bg
 .bg-green-lite{
@@ -114,3 +123,4 @@ select {
 .color-green{
   color: #35605A;
 }
+

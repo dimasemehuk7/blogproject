@@ -10,6 +10,8 @@ import {Footer} from "./components/footer/footer";
 import {BlogCardComponent} from "./components/blog-card/blog-card.component";
 import {HttpClientModule} from "@angular/common/http";
 import {ArticlePageComponent} from "./pages/article/article-page.component";
+import {LoaderComponent} from "./components/loader/loader.component";
+import {MarkdownModule} from "ngx-markdown";
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import {ArticlePageComponent} from "./pages/article/article-page.component";
     NavComponent,
     Footer,
     BlogCardComponent,
-    ArticlePageComponent
+    ArticlePageComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    HttpClientModule
+    HttpClientModule,
+    MarkdownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

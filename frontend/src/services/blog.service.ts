@@ -13,5 +13,7 @@ export class BlogService {
   getShortBlogs$(): Observable<any> {
     return this.http.get(`${this.baseUrl}/shortBlog`);
   }
-
+  getArticleById$(id:string): Observable<any> {
+    return this.http.get(`${this.baseUrl}/article/${id}`);
+  }
 }

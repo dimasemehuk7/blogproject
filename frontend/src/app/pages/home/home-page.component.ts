@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {BlogService} from "../../../services/blog.service";
+import {LoaderService} from "../../../services/loader.service";
+import {catchError} from "rxjs";
 
 @Component({
   templateUrl: 'home-page.component.html',
@@ -12,7 +14,10 @@ export class HomePageComponent implements OnInit {
   constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
-    this.blogService.getShortBlogs$().subscribe(data => {
+
+    this.blogService.getShortBlogs$().pipe(
+      catchError(() => []),
+    ).subscribe(data => {
       this.shortBlogs = data;
     });
   }
