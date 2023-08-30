@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
-const routes = require('./routes'); // Путь к вашим маршрутам
+const routes = require('./routes'); 
 const PORT='8080'
 const cors = require('cors');
 
 app.use(cors({
-    origin: 'http://localhost:4200', // Домен Angular додатку
+    origin: 'http://localhost:4200', 
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true // Дозволяє передавати креденції (cookies)
+    credentials: true
 }));
 
 mongoose.connect('mongodb://localhost:27017/blog', { useNewUrlParser: true, useUnifiedTopology: true })
